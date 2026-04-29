@@ -1,0 +1,70 @@
+:root {
+  --text: rgba(0, 0, 0, 0.65);
+  --text-h: #000;
+  --bg: #fff;
+  --border: rgba(0, 0, 0, 0.18);
+  --code-bg: #fff;
+  --accent: #000;
+  --accent-bg: rgba(0, 0, 0, 0.06);
+  --accent-border: rgba(0, 0, 0, 0.35);
+  --social-bg: rgba(0, 0, 0, 0.03);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Keep the same black/white palette even if OS prefers dark. */
+    --text: rgba(0, 0, 0, 0.65);
+    --text-h: #000;
+    --bg: #fff;
+    --border: rgba(0, 0, 0, 0.18);
+    --code-bg: #fff;
+    --accent: #000;
+    --accent-bg: rgba(0, 0, 0, 0.06);
+    --accent-border: rgba(0, 0, 0, 0.35);
+    --social-bg: rgba(0, 0, 0, 0.03);
+    --shadow:
+      rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}

@@ -1,0 +1,30 @@
+# Node
+node_modules/
+dist/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pwc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Envs
+.env
+.env.*
+!.env.example
+
+# Virtualenv
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
