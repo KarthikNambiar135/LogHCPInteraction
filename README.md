@@ -1,6 +1,5 @@
 # logAI — HCP Interaction Logger (LangGraph Technical Challenge)
 
-This project replicates the provided screenshot:
 - Left: Interaction Details form (read-only; you must NOT fill it manually)
 - Right: AI Assistant chat (LLM + LangGraph tools) that controls the form
 
@@ -96,7 +95,3 @@ Options:
 All tools + the LangGraph graph live in:
 - `backend/app/agents/interaction_agent.py`
 
-## Safety / GitHub
-Do NOT commit real secrets:
-- `.env` files are gitignored.
-- Put your real `GROQ_API_KEY` only in `backend/.env`.
